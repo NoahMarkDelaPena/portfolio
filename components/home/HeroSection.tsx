@@ -1,5 +1,4 @@
 "use client";
-import { Facebook } from "lucide";
 import Image from "next/image";
 import React, { FC } from "react";
 
