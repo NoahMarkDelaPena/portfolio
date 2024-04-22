@@ -36,6 +36,12 @@ const AboutSection: FC<AboutSectionProps> = () => {
               occasionally does some backend stuff. I like collaborating and
               sharing ideas with other students and developers.
             </p>
+            <p className="max-w-[700px] text-gray-300 text-sm ml-4 mt-8">
+              Email: noahmarkdelapena@gmail.com
+            </p>
+            <p className="max-w-[700px] text-gray-300 text-sm ml-4">
+              Contact: 09369855162
+            </p>
           </span>
         </div>
       </div>

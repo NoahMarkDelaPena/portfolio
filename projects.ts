@@ -12,6 +12,8 @@ export const projects = [
     type2: "Web",
     techs:
       "Next JS, Nest JS, MongoDB, Socket.Io, Zustand, Cloudinary, Shadcn UI, Tailwind CSS, Git",
+    coDev1: "Carl James Roxas",
+    coDev2: "Kevin Roy Sta Cruz",
     finishedDate: "04-20-2024",
   },
   {
