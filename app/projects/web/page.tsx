@@ -9,10 +9,12 @@ const page = () => {
     <main className="px-8 bg-[#0d0c0d] h-full">
       <Navigation isProjectsActive={true} />
       <div className="flex flex-col sm:flex-row">
-        <SideNav isCollaboration={true} />
+        <SideNav isWeb={true} />
         <div className="flex flex-col gap-8">
           {projects
-            .filter((project) => project.type === "Collaboration")
+            .filter(
+              (project) => project.type === "Web" || project.type2 === "Web"
+            )
             .map((project) => (
               <ProjectCard
                 key={project.id}

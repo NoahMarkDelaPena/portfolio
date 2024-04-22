@@ -8,7 +8,7 @@ const AboutSection: FC<AboutSectionProps> = () => {
     <section className="min-h-screen flex justify-center items-center max-w-4xl mx-auto">
       <div className="flex flex-col">
         <span className="relative">
-          <span className="absolute bg-white w-[700px] h-[300px] bottom-[60px]"></span>
+          <span className="absolute bg-white w-full h-[300px] bottom-[60px]"></span>
           <Image
             src="/my-image.svg"
             alt="about-image"

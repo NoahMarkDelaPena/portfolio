@@ -6,7 +6,7 @@ import ProjectsSection from "@/components/home/ProjectsSection";
 export default function Home() {
   return (
     <main className="px-8 bg-[#0d0c0d]">
-      <Navigation />
+      <Navigation isHomeActive={true} />
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
