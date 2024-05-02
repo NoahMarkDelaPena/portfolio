@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
 
-interface ProjectCardProps {
+interface DesignsCardProps {
   id?: number;
   projectName?: string;
   projectDescription?: string;
@@ -18,7 +18,7 @@ interface ProjectCardProps {
   coDev2?: string;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({
+const DesignsCard: FC<DesignsCardProps> = ({
   id,
   projectName,
   projectDescription,
@@ -55,8 +55,10 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <div className="lg:w-1/2 px-6 lg:px-12 py-8">
           <div className="flex justify-between items-center border-b pb-4">
             <span className="text-lg">
-              Description ({type}, {type2})
+              Description ({type}
+              {type2 && `, ${type2}`})
             </span>
+
             <Link
               className="text-sm text-[#009688] hover:text-[#00796b]"
               href="#"
@@ -66,8 +68,8 @@ const ProjectCard: FC<ProjectCardProps> = ({
           </div>
           <div className="mt-4">
             <p>Status: {status}</p>
-            <p>Deployed: {isDeployed === true ? "Deployed" : "Not Yet"}</p>
-            <p>Techs Used: {techs}</p>
+            {/* <p>Deployed: {isDeployed === true ? "Deployed" : "Not Yet"}</p> */}
+            <p>Tools Used: {techs}</p>
             {coDev1 ? (
               <p>
                 Co-Developers: {coDev1} & {coDev2}
@@ -95,4 +97,4 @@ const ProjectCard: FC<ProjectCardProps> = ({
   );
 };
 
-export default ProjectCard;
+export default DesignsCard;

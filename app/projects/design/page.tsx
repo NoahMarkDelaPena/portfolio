@@ -1,7 +1,7 @@
 import Navigation from "@/components/home/Navigation";
-import ProjectCard from "@/components/projects/ProjectCard";
+import DesignsCard from "@/components/projects/DesignsCard";
 import SideNav from "@/components/projects/SideNav";
-import { projects } from "@/projects";
+import { designs } from "@/projects";
 import React from "react";
 
 const page = () => {
@@ -11,23 +11,22 @@ const page = () => {
       <div className="flex flex-col sm:flex-row">
         <SideNav isDesign={true} />
         <div className="flex flex-col gap-8">
-          {projects
-            .filter((project) => project.type === "Design")
-            .map((project) => (
-              <ProjectCard
-                key={project.id}
-                id={project.id}
-                projectName={project.projectName}
-                projectDescription={project.projectDescription}
-                finishedDate={project.finishedDate}
-                projectImage={project.projectImage}
-                status={project.status}
-                isDeployed={project.isDeployed}
-                type={project.type}
-                projectUrl={project.projectUrl}
-                techs={project.techs}
-              />
-            ))}
+          {designs.map((project) => (
+            <DesignsCard
+              key={project.id}
+              id={project.id}
+              projectName={project.projectName}
+              projectDescription={project.projectDescription}
+              finishedDate={project.finishedDate}
+              projectImage={project.projectImage}
+              status={project.status}
+              isDeployed={project.isDeployed}
+              type={project.type}
+              type2={project.type2}
+              projectUrl={project.projectUrl}
+              techs={project.tools}
+            />
+          ))}
         </div>
       </div>
     </main>

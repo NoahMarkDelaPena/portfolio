@@ -60,16 +60,16 @@ const SideNav: FC<SideNavProps> = ({
             Collaboration
           </Link>
         </li>
-        {/* <li>
+        <li>
           <Link
             href="/projects/design"
             className={`${
               isDesign ? "bg-white px-4 py-1 rounded-full text-gray-700" : ""
             }`}
           >
-            Design
+            UI/UX
           </Link>
-        </li> */}
+        </li>
       </ul>
     </aside>
   );
